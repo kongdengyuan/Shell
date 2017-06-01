@@ -1,4 +1,5 @@
-et -ex
+#!/bin/bash
+#set -ex
 ## For 1605 info
 HOST=hostname
 PASSWORD=passwd
