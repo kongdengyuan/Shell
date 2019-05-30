@@ -5,7 +5,7 @@ read -p "Please input a user:" USER
 id $USER >&/dev/null
 
 if [ $? -eq 0 ] ; then
-echo "$USER already exists"
+echo -e "\e[1;31m$USER already exists\e[0m"
 else
-   groupadd $USER && useradd -m $USER -d /home/$USER -g $USER -s /bin/bash &&   echo "Create $USER success !"
+   groupadd $USER && useradd -m $USER -d /home/$USER -g $USER -s /bin/bash &&   echo -e "\e[1;32mCreate user Success ! \e[0m"
 fi
